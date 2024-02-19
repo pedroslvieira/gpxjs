@@ -256,7 +256,7 @@ export const parseGPXWithCustomParser = (
 					extensions[name] = parseFloat(
 						(extension as Element).innerHTML != undefined
 							? (extension as Element).innerHTML
-							: (extension as Element).childNodes[0]
+							: (extension as Element)
 									.textContent ?? ""
 					)
 				}
